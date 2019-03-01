@@ -1,5 +1,9 @@
+def helper_method():
+    print("helper method running")
+
 def main():
-    pass
+    print("hello from 3.0")
+    helper_method()
 
 if __name__ == "__main__":
-    print("hello from 2.2.5")
+    main()
