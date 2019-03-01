@@ -15,8 +15,7 @@ def get_md5(filename):
 
 if(__name__ == "__main__"):
     config = dict()
-    print("""
-HOW TO USE:
+    print("""HOW TO USE:
 This program assumes you've already written a new program to groove_program.py under run().
 This simply sets up config.json.
 You are responsible for pushing this release to https://github.com/NoahFiner/Groove-Challenge-Git.git.
