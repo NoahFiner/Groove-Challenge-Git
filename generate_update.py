@@ -23,6 +23,10 @@ You are responsible for pushing this release to https://github.com/NoahFiner/Gro
     """)
 
     config["version"] = input("Input a version: ")
+    # Make sure our version is a number
+    if len(config["version"]) == 0 or not config["version"].replace(".","").isdigit():
+        raise Exception("Version must be in the format x.x.x..., where x is an integer")
+
     config["notes"] = input("Add any release notes: ")
     config["date"] = int(time.time())
     config["hash"] = get_md5("groove_program.py")
